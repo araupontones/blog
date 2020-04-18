@@ -1,5 +1,5 @@
 ---
-title: "Set up a webite using bogdown, GitHub, and Ocean Drive"
+title: "Set up a website using bogdown, GitHub, and Ocean Drive"
 author: "Andrés Arau"
 date: 2020-04-18
 categories: ["R"]
@@ -7,7 +7,12 @@ tags: ["R Markdown", "R", "blogdown", "GitHub"]
 ---
 
 
-I am writting this because it took me some long nights to try to figure out how to get started with blogdown. Hopefuly this post helps some others these posts have helped me:
+I am writting this because it took me some long nights and days to try to figure out how to get started with blogdown. Hopefuly this post helps some others just like these posts have helped me:
+
+[Yihui Xie's fantastic blogdown book](https://bookdown.org/yihui/blogdown/installation.html),
+[Alison Hill's amazing step by step](https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/),
+and, [Collin Quirk's super ueful guide to upload blogdown into Digital Ocean](http://colinquirk.com/blogdown-on-digitalocean/)
+
 
 
 ## In GitHUB
@@ -31,14 +36,23 @@ I am writting this because it took me some long nights to try to figure out how 
 
 Check all the directories that were created when you created the site and configure the congig.toml
 
-## In Ocean Drive
+## In DigitalOcean
 
 I followed [Collin Quirk's approach](http://colinquirk.com/blogdown-on-digitalocean/) which is very simple:
 
 "Install nstall nginx `apt-get install nginx` and pandoc `apt-get install pandoc`. Start an interactive R session (by typing `R`) and install blogdown `install.packages("blogdown")` followed by hugo `blogdown::install_hugo()`. That is all you need to do in terms of setting up blogdow."
 
 
-Open your termina and navigate to the directory where you will clone your GitHub repo
+1. Open your terminal and navigate to the directory where you will clone your GitHub repo.
+2. `git clone https://github.com/araupontones/blog.git`
+3. Copy the files like this `sudo cp -r public/. /var/www/html/.`
+
+*et voila!* your website is up and running!!!
+
+
+
+
+
 
 
 

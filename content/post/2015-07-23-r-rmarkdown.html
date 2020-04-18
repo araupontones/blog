@@ -1,5 +1,5 @@
 ---
-title: "Set up a webite using bogdown, GitHub, and Ocean Drive"
+title: "Set up a website using bogdown, GitHub, and Ocean Drive"
 author: "Andrés Arau"
 date: 2020-04-18
 categories: ["R"]
@@ -8,7 +8,10 @@ tags: ["R Markdown", "R", "blogdown", "GitHub"]
 
 
 
-<p>I am writting this because it took me some long nights to try to figure out how to get started with blogdown. Hopefuly this post helps some others these posts have helped me:</p>
+<p>I am writting this because it took me some long nights and days to try to figure out how to get started with blogdown. Hopefuly this post helps some others just like these posts have helped me:</p>
+<p><a href="https://bookdown.org/yihui/blogdown/installation.html">Yihui Xie’s fantastic blogdown book</a>,
+<a href="https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/">Alison Hill’s amazing step by step</a>,
+and, <a href="http://colinquirk.com/blogdown-on-digitalocean/">Collin Quirk’s super ueful guide to upload blogdown into Digital Ocean</a></p>
 <div id="in-github" class="section level2">
 <h2>In GitHUB</h2>
 <ol style="list-style-type: decimal">
@@ -35,9 +38,14 @@ tags: ["R Markdown", "R", "blogdown", "GitHub"]
 <h2>In your cloned folder</h2>
 <p>Check all the directories that were created when you created the site and configure the congig.toml</p>
 </div>
-<div id="in-ocean-drive" class="section level2">
-<h2>In Ocean Drive</h2>
+<div id="in-digitalocean" class="section level2">
+<h2>In DigitalOcean</h2>
 <p>I followed <a href="http://colinquirk.com/blogdown-on-digitalocean/">Collin Quirk’s approach</a> which is very simple:</p>
 <p>“Install nstall nginx <code>apt-get install nginx</code> and pandoc <code>apt-get install pandoc</code>. Start an interactive R session (by typing <code>R</code>) and install blogdown <code>install.packages("blogdown")</code> followed by hugo <code>blogdown::install_hugo()</code>. That is all you need to do in terms of setting up blogdow.”</p>
-<p>Open your termina and navigate to the directory where you will clone your GitHub repo</p>
+<ol style="list-style-type: decimal">
+<li>Open your terminal and navigate to the directory where you will clone your GitHub repo.</li>
+<li><code>git clone https://github.com/araupontones/blog.git</code></li>
+<li>Copy the files like this <code>sudo cp -r public/. /var/www/html/.</code></li>
+</ol>
+<p><em>et voila!</em> your website is up and running!!!</p>
 </div>

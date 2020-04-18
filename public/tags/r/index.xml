@@ -12,12 +12,13 @@
     
     
     <item>
-      <title>Set up a webite using bogdown, GitHub, and Ocean Drive</title>
+      <title>Set up a website using bogdown, GitHub, and Ocean Drive</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>I am writting this because it took me some long nights to try to figure out how to get started with blogdown. Hopefuly this post helps some others these posts have helped me:
+      <description>I am writting this because it took me some long nights and days to try to figure out how to get started with blogdown. Hopefuly this post helps some others just like these posts have helped me:
+Yihui Xie’s fantastic blogdown book,Alison Hill’s amazing step by step,and, Collin Quirk’s super ueful guide to upload blogdown into Digital Ocean
 In GitHUBCreate a repositary, name it as you want and enable a READMEClick on the green buton “Clone or download”In your terminalOpen git bash, select the local directory where you want to clone the GitHub repogit clone https://github.</description>
     </item>
     
