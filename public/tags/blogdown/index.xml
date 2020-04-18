@@ -6,7 +6,7 @@
     <description>Recent content in blogdown on Andrés Arau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Set up a website using bogdown, GitHub, and Ocean Drive</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>I am writting this because it took me some long nights and days to try to figure out how to get started with blogdown. Hopefuly this post helps some others just like these posts have helped me:

@@ -12,9 +12,19 @@
     
     
     <item>
+      <title>Tracker of confirm cases for covid 19 in Mexico</title>
+      <link>/post/covid19mx-tracker/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/covid19mx-tracker/</guid>
+      <description>This interactive map is a personal and voluntary project that aims to track confirmed cases of #covid19 in each Mexican municipality. The map automatically updates in real-time using official data from the Mexican government.
+Feel free to enther the map, click on each municipality to see how many of its residents have tested positive for covid19, or look at the charts that show the daily evolution of covid19 in Mexico</description>
+    </item>
+    
+    <item>
       <title>Set up a website using bogdown, GitHub, and Ocean Drive</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>I am writting this because it took me some long nights and days to try to figure out how to get started with blogdown. Hopefuly this post helps some others just like these posts have helped me:

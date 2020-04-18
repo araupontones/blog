@@ -12,20 +12,20 @@
     
     
     <item>
-      <title>blogdown</title>
-      <link>/tags/blogdown/</link>
+      <title>covid</title>
+      <link>/tags/covid/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/blogdown/</guid>
+      <guid>/tags/covid/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>GitHub</title>
-      <link>/tags/github/</link>
+      <title>dashboards</title>
+      <link>/tags/dashboards/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/github/</guid>
+      <guid>/tags/dashboards/</guid>
       <description></description>
     </item>
     
@@ -39,9 +39,36 @@
     </item>
     
     <item>
+      <title>shiny</title>
+      <link>/tags/shiny/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogdown</title>
+      <link>/tags/blogdown/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>/tags/github/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R Markdown</title>
       <link>/tags/r-markdown/</link>
-      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/r-markdown/</guid>
       <description></description>

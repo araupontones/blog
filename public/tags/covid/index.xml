@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>covid on Andrés Arau</title>
+    <link>/tags/covid/</link>
+    <description>Recent content in covid on Andrés Arau</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/covid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tracker of confirm cases for covid 19 in Mexico</title>
+      <link>/post/covid19mx-tracker/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/covid19mx-tracker/</guid>
+      <description>This interactive map is a personal and voluntary project that aims to track confirmed cases of #covid19 in each Mexican municipality. The map automatically updates in real-time using official data from the Mexican government.
+Feel free to enther the map, click on each municipality to see how many of its residents have tested positive for covid19, or look at the charts that show the daily evolution of covid19 in Mexico</description>
+    </item>
+    
+  </channel>
+</rss>
