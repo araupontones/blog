@@ -1,0 +1,41 @@
+---
+title: "About"
+output: html_document
+date: 2020-04-18
+author: "Andrés Arau"
+---
+
+
+## Me
+
+I am passionate about data visualization, interactive maps, and the use of data innovative approaches to facilate ongoing learning and adaptation of development programmes.
+
+## I have lived in:
+
+Mexico, Canada, Spain, US, Sweeden, and UK.
+
+## And have worked in:
+
+Austria, Canada, Colombia, Cuba, Ghana, India, Kenya, Madagascar, Mexico, Mozambique, Nigeria, Peru, Sierra Leone, Spain, Sweden, United Kingdom, USA, Vietnam.
+
+## Have had the luck to work for these organizations in different projects:
+
+* Ashoka
+* Carlos Slim Foundation
+* Department for Business, Energy and Industrial Strategy (UK)
+* Department for International Development (UK)
+* Fundacion IDEA /C230 Consultores
+* Inter-American Development Bank
+* International Atomic Energy Agency
+* International Fund For Agricultural Development
+* Oxford Policy Management
+* The Hunger Project
+* World Bank
+* Unicef
+* United Nations Development Programme
+
+
+## Always walk together with:
+
+Marti :)
+
