@@ -1,0 +1,23 @@
+theme = "tale-hugo"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Andrés Arau"
+
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/araupontones"
+    weight = 2
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/AndresArau"
+    weight = 3
+[[menu.main]]
+    name = "CV"
+    url = "/AndresArau.pdf"
+    weight = 4
+    

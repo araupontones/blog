@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Andrés Arau</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on Andrés Arau</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set up a webite using bogdown, GitHub, and Ocean Drive</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>I am writting this because it took me some long nights to try to figure out how to get started with blogdown. Hopefuly this post helps some others these posts have helped me:
+In GitHUBCreate a repositary, name it as you want and enable a READMEClick on the green buton “Clone or download”In your terminalOpen git bash, select the local directory where you want to clone the GitHub repogit clone https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

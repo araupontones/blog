@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Set up a webite using bogdown, GitHub, and Ocean Drive &middot; Andrés Arau</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Andrés Arau" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Andrés Arau</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="https://github.com/araupontones">
+                
+                <span>GitHub</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="https://twitter.com/AndresArau">
+                
+                <span>Twitter</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/andresarau.pdf">
+                
+                <span>CV</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Andrés Arau
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-04-18 00:00:00 &#43;0000 UTC">April 18, 2020</time>
+</div>
+		<h1 class="post-title">Set up a webite using bogdown, GitHub, and Ocean Drive</h1>
+<div class="post-line"></div>
+
+		
+
+		
+
+
+<p>I am writting this because it took me some long nights to try to figure out how to get started with blogdown. Hopefuly this post helps some others these posts have helped me:</p>
+<div id="in-github" class="section level2">
+<h2>In GitHUB</h2>
+<ol style="list-style-type: decimal">
+<li>Create a repositary, name it as you want and enable a README</li>
+<li>Click on the green buton “Clone or download”</li>
+</ol>
+</div>
+<div id="in-your-terminal" class="section level2">
+<h2>In your terminal</h2>
+<ol style="list-style-type: decimal">
+<li>Open git bash, select the local directory where you want to clone the GitHub repo</li>
+<li><code>git clone https://github.com/araupontones/blog.git</code></li>
+</ol>
+</div>
+<div id="in-r-studio" class="section level2">
+<h2>In R studio</h2>
+<ol style="list-style-type: decimal">
+<li>Create a project in the local folder where the repo was cloned</li>
+<li><code>Install.packages("blogdown")</code></li>
+<li>Create new site and choose a theme <code>blogdown::new_site(theme = "nanxstats/hugo-tanka", theme_example = TRUE)</code></li>
+</ol>
+</div>
+<div id="in-your-cloned-folder" class="section level2">
+<h2>In your cloned folder</h2>
+<p>Check all the directories that were created when you created the site and configure the congig.toml</p>
+</div>
+<div id="in-ocean-drive" class="section level2">
+<h2>In Ocean Drive</h2>
+<p>I followed <a href="http://colinquirk.com/blogdown-on-digitalocean/">Collin Quirk’s approach</a> which is very simple:</p>
+<p>“Install nstall nginx <code>apt-get install nginx</code> and pandoc <code>apt-get install pandoc</code>. Start an interactive R session (by typing <code>R</code>) and install blogdown <code>install.packages("blogdown")</code> followed by hugo <code>blogdown::install_hugo()</code>. That is all you need to do in terms of setting up blogdow.”</p>
+<p>Open your termina and navigate to the directory where you will clone your GitHub repo</p>
+</div>
+
+
+		
+	</div>
+
+	<div class="pagination">
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-04-18 16:57:15.8233871 &#43;0200 CEST m=&#43;0.124142401">2020</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

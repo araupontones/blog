@@ -1,0 +1,44 @@
+---
+title: "Set up a webite using bogdown, GitHub, and Ocean Drive"
+author: "Andrés Arau"
+date: 2020-04-18
+categories: ["R"]
+tags: ["R Markdown", "R", "blogdown", "GitHub"]
+---
+
+
+I am writting this because it took me some long nights to try to figure out how to get started with blogdown. Hopefuly this post helps some others these posts have helped me:
+
+
+## In GitHUB
+
+1. Create a repositary, name it as you want and enable a README
+2. Click on the green buton "Clone or download"
+
+
+## In your terminal
+
+1. Open git bash, select the local directory where you want to clone the GitHub repo
+2. `git clone https://github.com/araupontones/blog.git`
+
+## In R studio 
+
+1. Create a project in the local folder where the repo was cloned
+2. `Install.packages("blogdown")`
+3. Create  new site and choose a theme `blogdown::new_site(theme = "nanxstats/hugo-tanka", theme_example = TRUE)`
+
+## In your cloned folder 
+
+Check all the directories that were created when you created the site and configure the congig.toml
+
+## In Ocean Drive
+
+I followed [Collin Quirk's approach](http://colinquirk.com/blogdown-on-digitalocean/) which is very simple:
+
+"Install nstall nginx `apt-get install nginx` and pandoc `apt-get install pandoc`. Start an interactive R session (by typing `R`) and install blogdown `install.packages("blogdown")` followed by hugo `blogdown::install_hugo()`. That is all you need to do in terms of setting up blogdow."
+
+
+Open your termina and navigate to the directory where you will clone your GitHub repo
+
+
+
