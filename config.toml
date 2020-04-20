@@ -13,11 +13,19 @@ title = "Andrés Arau"
     url = "https://github.com/araupontones"
     weight = 2
 [[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/AndresArau"
+    name = "Linkedin"
+    url = "https://www.linkedin.com/in/andr%C3%A9s-arau-017b1127/"
     weight = 3
 [[menu.main]]
-    name = "CV"
-    url = "/AndresArau.pdf"
+    name = "Twitter"
+    url = "https://twitter.com/AndresArau"
     weight = 4
+[[menu.main]]
+    name = "CV"
+    url = "/static/AndresArau.pdf"
+    weight = 5
+[[menu.main]]
+    name = "@"
+    url = "mailto:andres.arau@outlook.com"
+    weight = 6
     
