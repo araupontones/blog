@@ -18,4 +18,4 @@ tags:
 
 
 
-*Feel free to enther the map, click on a municipality to see how many of its residents have tested positive for covid19, or look at the charts that show the daily evolution of covid19 in Mexico*  
+*Feel free to enter the map, click on a municipality to see how many of its residents have tested positive for covid19, or look at the charts that show the daily evolution of covid19 in Mexico*  

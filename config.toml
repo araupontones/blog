@@ -1,5 +1,5 @@
 theme = "tale-hugo"
-baseURL = "http://example.org/"
+baseURL = "http://andresarau.com/"
 languageCode = "en-us"
 title = "Andrés Arau"
 
