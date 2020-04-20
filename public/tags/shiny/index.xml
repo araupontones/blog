@@ -12,13 +12,13 @@
     
     
     <item>
-      <title>Tracker of confirm cases for covid 19 in Mexico</title>
+      <title>Tracker of confirmed cases for covid19 in Mexico</title>
       <link>/post/covid19mx-tracker/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/covid19mx-tracker/</guid>
       <description>This interactive map is a personal and voluntary project that aims to track confirmed cases of #covid19 in each Mexican municipality. The map automatically updates in real-time using official data from the Mexican government.
-Feel free to enther the map, click on each municipality to see how many of its residents have tested positive for covid19, or look at the charts that show the daily evolution of covid19 in Mexico</description>
+Feel free to enther the map, click on a municipality to see how many of its residents have tested positive for covid19, or look at the charts that show the daily evolution of covid19 in Mexico</description>
     </item>
     
   </channel>

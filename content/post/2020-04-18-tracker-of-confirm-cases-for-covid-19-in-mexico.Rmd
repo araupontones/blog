@@ -1,5 +1,5 @@
 ---
-title: Tracker of confirm cases for covid 19 in Mexico
+title: Tracker of confirmed cases for covid19 in Mexico
 author: Andrés Arau
 date: '2020-04-18'
 slug: covid19mx-tracker
@@ -11,11 +11,11 @@ tags:
   - shiny
 ---
 
-![](/post/2020-04-18-tracker-of-confirm-cases-for-covid-19-in-mexico_files/covid19mx.PNG){width=50% height=50%}
+![](/post/2020-04-18-tracker-of-confirm-cases-for-covid-19-in-mexico_files/covid19mx.PNG){width=100% height=100%}
 
 
 [This interactive map](http://andresarau.com/shiny/covid19mx/) is a personal and voluntary project that aims to track confirmed cases of #covid19 in each Mexican municipality. The map automatically updates in real-time using official data from the Mexican government.
 
 
 
-*Feel free to enther the map, click on each municipality to see how many of its residents have tested positive for covid19, or look at the charts that show the daily evolution of covid19 in Mexico*  
+*Feel free to enther the map, click on a municipality to see how many of its residents have tested positive for covid19, or look at the charts that show the daily evolution of covid19 in Mexico*  

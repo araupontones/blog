@@ -1,17 +1,17 @@
 ---
-title: "Set up a website using bogdown, GitHub, and Ocean Drive"
+title: "Set up a website with R using blogdown, GitHub, and DigitalOcean"
 author: "Andrés Arau"
 date: 2020-04-16
-categories: ["R"]
-tags: ["R Markdown", "R", "blogdown", "GitHub"]
+categories: ["R", "blogdown", "DigitalOcean"]
+tags: ["R Markdown", "R", "blogdown", "GitHub", "DigitalOCean"]
 ---
 
 
-I am writting this because it took me some long nights and days to try to figure out how to get started with blogdown. Hopefuly this post helps some others just like these posts have helped me:
+I am writting this because it took me some long nights and days to try to figure out how to get started with blogdown. Hopefuly this post helps someone just like these sources have helped me:
 
 [Yihui Xie's fantastic blogdown book](https://bookdown.org/yihui/blogdown/installation.html),
 [Alison Hill's amazing step by step](https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/),
-and, [Collin Quirk's super ueful guide to upload blogdown into Digital Ocean](http://colinquirk.com/blogdown-on-digitalocean/)
+and, [Collin Quirk's super ueful guide to upload blogdown into DigitalOcean](http://colinquirk.com/blogdown-on-digitalocean/)
 
 
 

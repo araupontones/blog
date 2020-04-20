@@ -43,7 +43,22 @@
   </url>
   
   <url>
+    <loc>/categories/blogdown/</loc>
+    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
+    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/digitalocean/</loc>
+    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/digitalocean/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url>
   
