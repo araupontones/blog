@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Andrés Arau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>covid</title>
       <link>/tags/covid/</link>
-      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/covid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>indigenas</title>
+      <link>/tags/indigenas/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/indigenas/</guid>
       <description></description>
     </item>
     

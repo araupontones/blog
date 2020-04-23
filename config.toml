@@ -22,7 +22,7 @@ title = "Andrés Arau"
     weight = 4
 [[menu.main]]
     name = "CV"
-    url = "/static/andresarau.pdf"
+    url = "https://github.com/araupontones/blog/blob/master/static/AndresArau.pdf?raw=TRUE"
     weight = 5
 [[menu.main]]
     name = "@"

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>indigenas on Andrés Arau</title>
+    <link>/tags/indigenas/</link>
+    <description>Recent content in indigenas on Andrés Arau</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/indigenas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Los invisibles</title>
+      <link>/post/los-invisibles/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/los-invisibles/</guid>
+      <description>Hasta el 21 de abril de 2020 51,634 personas han sido testadas por coronavirus en México. De estas, solamente el 1% habla alguna lengua indígena. Por cada 100,000 personas que residen en municipios de mayoría indígena, a tan sólo 4.9 se les ha realizado el test de diágnostico, frente a casi 45 en municipios de mayoría no indígena.
+El gobierno mexicano proporciona información del seguimiento al coronavirus diariamente. Los datos incluyen información sobre el número de tests realizados, casos confirmados y fallecimientos.</description>
+    </item>
+    
+  </channel>
+</rss>

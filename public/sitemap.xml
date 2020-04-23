@@ -3,17 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tags/covid/</loc>
-    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/dashboards/</loc>
-    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+    <loc>/tags/covid/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/covid/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/desigualdad/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/indigenas/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/indigenas/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/los-invisibles/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dashboards/</loc>
     <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -24,11 +59,6 @@
   
   <url>
     <loc>/tags/shiny/</loc>
-    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -44,11 +74,6 @@
   
   <url>
     <loc>/categories/blogdown/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url>
   
