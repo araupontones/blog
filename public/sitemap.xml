@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/linea-de-ayuda/</loc>
+    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
@@ -34,11 +44,6 @@
   
   <url>
     <loc>/post/los-invisibles/</loc>
-    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
   
