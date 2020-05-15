@@ -12,16 +12,6 @@
     
     
     <item>
-      <title>Línea de ayuda</title>
-      <link>/post/linea-de-ayuda/</link>
-      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/linea-de-ayuda/</guid>
-      <description>Las llamadas categorizadas como “violencia de género intrafamiliar” se han triplicado durante la cuarta semana de la Jornada Nacional de Sana Distancia en Ciudad de México.
-La Jornada Nacional de Sana Distancia que ha estado vigente en México desde el 23 de Marzo de 2020 recomienda a la población quedarse en casa para evitar contagios por coronavirus. Como resultado de la campaña, una buena parte de la sociedad mexicana ha respondido en redes sociales con los ya famosos #QuedateEnCasa o #YoMeQuedoEnCasa.</description>
-    </item>
-    
-    <item>
       <title>Los invisibles</title>
       <link>/post/los-invisibles/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
@@ -62,6 +52,16 @@ In GitHUBCreate a repositary, name it as you want and enable a READMEClick on 
 I have lived in:Mexico, Canada, Spain, US, Sweden, and UK.
 And have worked in:Austria, Canada, Colombia, Cuba, Ghana, India, Kenya, Madagascar, Mexico, Mozambique, Nigeria, Peru, Sierra Leone, Spain, Sweden, United Kingdom, USA, Vietnam.
 Have had the luck to work for these organizations in different projects:AshokaCarlos Slim FoundationDepartment for Business, Energy and Industrial Strategy (UK)Department for International Development (UK)Fundacion IDEA /C230 ConsultoresInter-American Development BankInternational Atomic Energy AgencyInternational Fund For Agricultural DevelopmentOxford Policy ManagementThe Hunger ProjectWorld BankUnicefUnited Nations Development ProgrammeAlways walk together with:Marti :)</description>
+    </item>
+    
+    <item>
+      <title>Línea mujeres</title>
+      <link>/post/linea-de-ayuda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/linea-de-ayuda/</guid>
+      <description>Las llamadas categorizadas como “violencia de género intrafamiliar” se han triplicado durante la Jornada Nacional de Sana Distancia en Ciudad de México.
+La Jornada Nacional de Sana Distancia que ha estado vigente en México desde el 23 de Marzo de 2020 recomienda a la población quedarse en casa para evitar contagios por coronavirus. Como resultado de la campaña, una buena parte de la sociedad mexicana ha respondido en redes sociales con los ya famosos #QuedateEnCasa o #YoMeQuedoEnCasa.</description>
     </item>
     
   </channel>
