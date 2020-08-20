@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Andrés Arau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Markdown</title>
+      <link>/tags/r-markdown/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r-markdown/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>covid</title>
@@ -35,15 +53,6 @@
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/dashboards/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
@@ -80,15 +89,6 @@
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
-      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r-markdown/</guid>
       <description></description>
     </item>
     

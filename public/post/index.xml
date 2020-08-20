@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Andrés Arau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Keeping my CV up to date with Rmarkdown</title>
+      <link>/post/cv-in-r/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cv-in-r/</guid>
+      <description>Keeping my CV up to date became a tedious routine. Not only did I have to repeat the same steps over and over again but I also had to deal with the clunky formatting of Microsoft Word to mantain the style of my resume nice and neat.
+On my daily work I have to come up with efficient ways to automatize data processes: collect, clean, analyze and vizualize data in a way that the cycle can be repeated without the workflow crashing.</description>
+    </item>
     
     <item>
       <title>Línea mujeres</title>
