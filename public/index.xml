@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>ggplot sources</title>
+      <link>/post/ggplot-sources/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ggplot-sources/</guid>
+      <description>For the last two years I have been collecting very useful tricks and ideas to make good looking ggplot charts. Unitl today, this library of useful sources was living in my WhatsApp’s notes but I thought it would be easier to have it all in a single repository. So here I am organizing two years of links that I have been copying into my notes.
+Fonts
+Waffle charts</description>
+    </item>
+    
+    <item>
       <title>Keeping my CV up to date with Rmarkdown</title>
       <link>/post/cv-in-r/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>

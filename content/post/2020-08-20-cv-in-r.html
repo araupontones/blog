@@ -1,0 +1,32 @@
+---
+title: Keeping my CV up to date with Rmarkdown
+author: Andrés Arau
+date: '2020-08-20'
+slug: CV in R
+categories: []
+tags:
+  - R Markdown
+---
+
+
+
+<p><strong>Keeping my CV up to date became a tedious routine</strong>. Not only did I have to repeat the same steps over and over again but I also had to deal with the clunky formatting of Microsoft Word to mantain the style of my resume nice and neat.</p>
+<p>On my daily work I have to come up with efficient ways to automatize data processes: collect, clean, analyze and vizualize data in a way that the cycle can be repeated without the workflow crashing. Thus I realized that keeping my resume up to date is technically the same process. New data (a new project) comes in, and this needs to be binded to previous observations (older projects). Then I need to do some editing (cleaning) and display the information on a nicely formatted table (visualizing).</p>
+<div id="the-solution" class="section level2">
+<h2>The solution</h2>
+<p>I did what I often do for other data management tasks. I organised the information of all my projects through an online dataset (using <a href="https://www.zoho.com/creator/index1.html">zoho creator</a>), read the data via an API, and clean it in R. Finally, I used <a href="https://www.zoho.com/creator/index1.html">Rmarkdown</a> to create a template of my CV which is always linked to the latest version of my data.</p>
+<p>The rest just feels like magic! Every time that I work on a new project I just need to update my online database and run my R scripts. <strong>The output is a nice formatted and up to date version of my CV in html and pdf formats!!!</strong></p>
+<p>You can see the html version <a href="https://htmlpreview.github.io/?https://github.com/araupontones/CV/blob/master/Andres_Arau.html" target="_blank">here</a> and the pdf one <a href="https://github.com/araupontones/CV/blob/master/Jaime%20Andr%C3%A9s%20Arau%20Pontones.pdf?raw=TRUE">here.</a></p>
+<p>All code in <a href="https://github.com/araupontones/CV" target="_blank">GitHub</a>.</p>
+<div id="feels-like-magic" class="section level3">
+<h3>Feels like magic</h3>
+{{% youtube "NadXWhjDd64" %}}
+</div>
+<div id="my-gratitude-to-those-who-have-kindly-shared-examples-and-ideas-online" class="section level3">
+<h3>My gratitude to those who have kindly shared examples and ideas online:</h3>
+<ul>
+<li><p>Yihui Xie and Romain Lesur for their book: <a href="https://pagedown.rbind.io/"><em>pagedown: Create Paged HTML Documents for Printing from R Markdown</em></a></p></li>
+<li><p>Nic Strayer for his post: <a href="https://livefreeordichotomize.com/2019/09/04/building_a_data_driven_cv_with_r/"><em>Building a data-driven CV with R</em></a></p></li>
+</ul>
+</div>
+</div>

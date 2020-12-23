@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>ggplot sources &middot; Andrés Arau</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Andrés Arau" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Andrés Arau</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="https://github.com/araupontones">
+                
+                <span>GitHub</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="https://www.linkedin.com/in/andr%C3%A9s-arau-017b1127/">
+                
+                <span>Linkedin</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="https://twitter.com/AndresArau">
+                
+                <span>Twitter</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="https://htmlpreview.github.io/?https://github.com/araupontones/CV/blob/master/Andres_Arau.html">
+                
+                <span>CV</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="mailto:andres.arau@outlook.com">
+                
+                <span>@</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-11-13 00:00:00 &#43;0000 UTC">November 13, 2020</time>
+</div>
+		<h1 class="post-title">ggplot sources</h1>
+<div class="post-line"></div>
+
+		
+
+		
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>For the last two years I have been collecting very useful tricks and ideas to make good looking ggplot charts. Unitl today, this library of useful sources was living in my <a href="https://www.mobigyaan.com/how-to-use-whatsapp-for-making-notes-or-use-it-as-a-diary">WhatsApp’s notes</a> but I thought it would be easier to have it all in a single repository. So here I am organizing two years of links that I have been copying into my notes.</p>
+<p><a href="#Fonts">Fonts</a></p>
+<p><a href="#Waffle-charts">Waffle charts</a></p>
+<div id="fonts" class="section level1">
+<h1>Fonts</h1>
+<p>There are 5 steps to load the fonts: 1) <code>install.packages("extrafont")</code>, 2) import fonts from your system into the {extrafont} database <code>font_import()</code>, 3) register those fonts with R <code>loadfonts()</code> (this must be run once in each R session where you want to use the fonts), 4) check that your font is available using <code>fonts()</code>, and 5) use the font family in ggplot <code>theme(text= element_text(family="Roboto"))</code> or in any other specific text of your chart.</p>
+<p><strong>Useful URL in Stack Overflow:</strong> <a href="https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2">Changing forns in ggplot2</a></p>
+<p><strong>Example:</strong></p>
+<pre><code>library(extrafont)
+
+#See all fonts available
+  windowsFonts()
+
+#Check the fonts that exist in the environment
+  fonts()
+
+#Import new fonts. For example, in case you download from google fonts set the 
+#path to your fonts&#39; directory
+
+font_import(paths = &quot;C:/Users/andre/AppData/Local/Microsoft/Windows/Fonts&quot;)
+
+# And then load fonts
+loadfonts(device = &quot;win&quot;)
+</code></pre>
+</div>
+<div id="waffle-charts" class="section level1">
+<h1>Waffle charts</h1>
+<p>Once in a project, the client asked me to switch tables into a more appealing visualizations. I really did not want to use pie charts because they don’t work well with more than 3 categories, and he had already used many bar charts. So, a good alternative was using waffle charts!</p>
+<p>In this example I’m scrapping the unemployment rates by race reported by the <a href="https://www.bls.gov/web/empsit/cpsee_e16.htm">Bureau of Labor Statistics</a></p>
+<p><strong>Useful URL in Git Hub: </strong> <a href="https://github.com/hrbrmstr/waffle">hrbrmstr/waffle</a></p>
+<p><strong>For scraping tables from websites</strong> <a href="https://www.storybench.org/scraping-html-tables-and-downloading-files-with-r/">Storybencj</a></p>
+<div id="example-of-waffle-chart" class="section level2">
+<h2>Example of waffle chart:</h2>
+<p><img src="/post/2020-11-13-ggplot-sources_files/figure-html/waffle_chart-1.png" width="672" /></p>
+</div>
+</div>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/post/cv-in-r/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-12-23 15:04:45.601879 &#43;0100 CET m=&#43;0.093809301">2020</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

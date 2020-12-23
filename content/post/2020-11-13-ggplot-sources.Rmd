@@ -1,0 +1,83 @@
+---
+title: ggplot sources
+author: ''
+date: '2020-11-13'
+slug: ggplot-sources
+categories: []
+tags: []
+
+---
+
+```{r, set up, echo=F, warning = FALSE, message = FALSE}
+
+library(tidyverse)
+library(waffle)
+library(ggtext)
+library(scales)
+library(xml2) #'for webscrapping 
+library(zoo) #' for filling missing text
+
+#project directory
+
+dir_blog = dirname(
+  dirname(getwd())
+  )
+
+```
+
+For the last two years I have been collecting very useful tricks and ideas to make good looking ggplot charts. Unitl today, this library of useful sources was living in my [WhatsApp's notes](https://www.mobigyaan.com/how-to-use-whatsapp-for-making-notes-or-use-it-as-a-diary) but I thought it would be easier to have it all in a single repository. So here I am organizing two years of links  that I have been copying into my notes.
+
+[Fonts](#Fonts)
+
+[Waffle charts](#Waffle-charts)
+
+# Fonts
+
+
+There are 5 steps to load the fonts: 1) `install.packages("extrafont") `, 2) import fonts from your system into the {extrafont} database `font_import()`, 3) register those fonts with R `loadfonts()` (this must be run once in each R session where you want to use the fonts),  4) check that your font is available using `fonts()`,  and 5) use the font family in ggplot `theme(text= element_text(family="Roboto"))` or in any other specific text of your chart.
+
+**Useful URL in Stack Overflow:** [Changing forns in ggplot2](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2)
+
+**Example:**
+
+```
+library(extrafont)
+
+#See all fonts available
+  windowsFonts()
+
+#Check the fonts that exist in the environment
+  fonts()
+
+#Import new fonts. For example, in case you download from google fonts set the 
+#path to your fonts' directory
+
+font_import(paths = "C:/Users/andre/AppData/Local/Microsoft/Windows/Fonts")
+
+# And then load fonts
+loadfonts(device = "win")
+
+```
+
+# Waffle charts
+
+Once in a project, the client asked me to switch tables into a more appealing visualizations. I really did not want to use pie charts because they don't work well with more than 3 categories, and he had already used many bar charts. So, a good alternative was using waffle charts!
+
+In this example I'm scrapping the unemployment rates by race reported by the [Bureau of Labor Statistics](https://www.bls.gov/web/empsit/cpsee_e16.htm)
+
+
+**Useful URL in Git Hub: **  [hrbrmstr/waffle](https://github.com/hrbrmstr/waffle)
+
+**For scraping tables from websites** [Storybencj](https://www.storybench.org/scraping-html-tables-and-downloading-files-with-r/)
+
+
+## Example of waffle chart:
+
+```{R, waffle_chart, echo=F, warning = FALSE, message = FALSE}
+source(file.path(dir_blog, "R/waffle_charts.R"))
+waffle_plot
+
+#source("R/webscrapping.R")
+```
+
+

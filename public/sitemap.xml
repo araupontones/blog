@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/cv-in-r/</loc>
-    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+    <loc>/post/ggplot-sources/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/cv-in-r/</loc>
     <lastmod>2020-08-20T00:00:00+00:00</lastmod>
   </url>
   
