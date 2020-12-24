@@ -1,5 +1,5 @@
 ---
-title: ggplot sources
+title: ggplot I
 author: ''
 date: '2020-11-13'
 slug: ggplot-sources
@@ -16,6 +16,11 @@ library(ggtext)
 library(scales)
 library(xml2) #'for webscrapping 
 library(zoo) #' for filling missing text
+library(tidytext) 
+library(extrafont)
+library(ggtext) 
+library(grid)
+library(rio)
 
 #project directory
 
@@ -23,18 +28,93 @@ dir_blog = dirname(
   dirname(getwd())
   )
 
+dir_data = file.path(dir_blog, "data")
+
 ```
 
-For the last two years I have been collecting very useful tricks and ideas to make good looking ggplot charts. Unitl today, this library of useful sources was living in my [WhatsApp's notes](https://www.mobigyaan.com/how-to-use-whatsapp-for-making-notes-or-use-it-as-a-diary) but I thought it would be easier to have it all in a single repository. So here I am organizing two years of links  that I have been copying into my notes.
+Throughout 2020, while working on visualizations,  I collected useful tricks and ideas to make good looking **ggplot** charts. Unitl today, this library of useful sources was living at my [WhatsApp's notes](https://www.mobigyaan.com/how-to-use-whatsapp-for-making-notes-or-use-it-as-a-diary) but I thought it would be easier to have it all in a single repository. So here I am organizing a year of links  that I have been copying into my notes.
 
-[Fonts](#Fonts)
+### Content:
 
-[Waffle charts](#Waffle-charts)
+1. Density plots
+* Style the legend's colour bar
+2. Reordering & facetting
+3. Cowplot & title styling
+4. Waffle charts
+5. Fonts
+
+# Density plots
+
+I tend to use scatter plots when looking to the relationship between two numeric variables. But visualizations can become overwhelming when the amount of dots is large. Density plots can help to avoid overlapping by dividing the plot in multiple small fragments that represent the number of points in each area. The example below shows a density plot created for showing the relationship of [migrant stocks](https://www.un.org/en/development/desa/population/migration/data/estimates2/estimates19.asp) between countries and their [Facebook's Social Contentedness Index](https://dataforgood.fb.com/tools/social-connectedness-index/).  
+
+In the example below, I used the `guides ()` function to style the colour bar of the legend. This is a worth checking function!
+
+
+
+**Useful URL in the R Graph Gallery: **  [2d density plot with ggplot2](https://www.r-graph-gallery.com/2d-density-plot-with-ggplot2.html#hex)
+
+## Example of density plots
+
+[See code in Git Hub](https://github.com/araupontones/SCI_facebook/blob/main/3.R_charts/1.facet_hex_stock_sci.R)
+
+![](https://raw.githubusercontent.com/araupontones/SCI_facebook/main/5.plots/SCI_UN_facet.png){width=90%}
+
+# Reordering & facetting
+
+The problem is very simple: how to sort bars within each category in a plot? This sounds simple, but one day I spent hours trying to figure this out. The trick is done by using `reorder_within()` from the {tidytext} `r emo::ji("package")`. In the example below, I created a "_reordered factor_" called Team_rival: `reorder_within(Team_rival, goles_barca, decada))`.
+
+**Useful URL:** [Julia Silge](https://juliasilge.com/blog/reorder-within/)
+
+## Example of reordering and facetting
+[See code in Git Hub](https://github.com/araupontones/La-liga)
+
+```{R, facet_ordered_chart, echo=F, warning = FALSE, message = FALSE}
+source(file.path(dir_blog, "R/facet_ordered.R"))
+
+plot_facet
+
+#source("R/webscrapping.R")
+```
+
+# Cowplot & title styling
+
+It may sound silly but one the most important elements of a plot are its labels. Having the ability to control the color, position, and style of the title and subtitle makes a big difference. There are two `r emo::ji("package")`s that are useful for this: {_cowplot_} and {ggtext}. In the example below, I combined these `r emo::ji("package")`s to colour some characters of the title and to position the text in exact place where I wanted it to be.
+
+## Example of title styling with cowplot and ggtext
+
+[See code in Git Hub](https://github.com/araupontones/gtrends_2020/blob/main/R_charts/1.chart_gtrends_MX.R)
+
+![](https://raw.githubusercontent.com/araupontones/gtrends_2020/main/plots/trends_MX.png)
+
+# Waffle charts
+
+Once in a project, the client asked me to switch tables into more appealing visualizations. I really did not want to use pie charts because they don't work well with more than 3 categories, and he had already used many bar charts. So, a good alternative was using 🧇 (waffle) charts! 
+
+In this example I'm scrapping the unemployment rates by race reported by the [Bureau of Labor Statistics](https://www.bls.gov/web/empsit/cpsee_e16.htm)
+
+
+**Useful URL in Git Hub: **  [hrbrmstr/waffle](https://github.com/hrbrmstr/waffle)
+
+**For scraping tables from websites:** [Storybench](https://www.storybench.org/scraping-html-tables-and-downloading-files-with-r/)
+
+
+## Example of waffle chart
+
+[See code in Git Hub](https://github.com/araupontones/blog/blob/master/R/waffle_charts.R)
+
+```{R, waffle_chart, echo=F, warning = FALSE, message = FALSE}
+source(file.path(dir_blog, "R/waffle_charts.R"))
+waffle_plot
+
+#source("R/webscrapping.R")
+```
+
+
 
 # Fonts
 
 
-There are 5 steps to load the fonts: 1) `install.packages("extrafont") `, 2) import fonts from your system into the {extrafont} database `font_import()`, 3) register those fonts with R `loadfonts()` (this must be run once in each R session where you want to use the fonts),  4) check that your font is available using `fonts()`,  and 5) use the font family in ggplot `theme(text= element_text(family="Roboto"))` or in any other specific text of your chart.
+There are 5 steps to load the fonts: 1) `r emo::ji("package")` `install.packages("extrafont") `, 2) import fonts from your system into the {extrafont} database `font_import()`, 3) register those fonts with R `loadfonts()` (this must be run once in each R session where you want to use the fonts),  4) check that your font is available using `fonts()`,  and 5) use the font family in ggplot `theme(text= element_text(family="Roboto"))` or in any other specific text of your chart.
 
 **Useful URL in Stack Overflow:** [Changing forns in ggplot2](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2)
 
@@ -58,26 +138,4 @@ font_import(paths = "C:/Users/andre/AppData/Local/Microsoft/Windows/Fonts")
 loadfonts(device = "win")
 
 ```
-
-# Waffle charts
-
-Once in a project, the client asked me to switch tables into a more appealing visualizations. I really did not want to use pie charts because they don't work well with more than 3 categories, and he had already used many bar charts. So, a good alternative was using waffle charts!
-
-In this example I'm scrapping the unemployment rates by race reported by the [Bureau of Labor Statistics](https://www.bls.gov/web/empsit/cpsee_e16.htm)
-
-
-**Useful URL in Git Hub: **  [hrbrmstr/waffle](https://github.com/hrbrmstr/waffle)
-
-**For scraping tables from websites** [Storybencj](https://www.storybench.org/scraping-html-tables-and-downloading-files-with-r/)
-
-
-## Example of waffle chart:
-
-```{R, waffle_chart, echo=F, warning = FALSE, message = FALSE}
-source(file.path(dir_blog, "R/waffle_charts.R"))
-waffle_plot
-
-#source("R/webscrapping.R")
-```
-
 

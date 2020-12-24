@@ -1,5 +1,5 @@
 ---
-title: ggplot sources
+title: ggplot I
 author: ''
 date: '2020-11-13'
 slug: ggplot-sources
@@ -11,12 +11,67 @@ tags: []
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<p>For the last two years I have been collecting very useful tricks and ideas to make good looking ggplot charts. Unitl today, this library of useful sources was living in my <a href="https://www.mobigyaan.com/how-to-use-whatsapp-for-making-notes-or-use-it-as-a-diary">WhatsApp’s notes</a> but I thought it would be easier to have it all in a single repository. So here I am organizing two years of links that I have been copying into my notes.</p>
-<p><a href="#Fonts">Fonts</a></p>
-<p><a href="#Waffle-charts">Waffle charts</a></p>
+<p>Throughout 2020, while working on visualizations, I collected useful tricks and ideas to make good looking <strong>ggplot</strong> charts. Unitl today, this library of useful sources was living at my <a href="https://www.mobigyaan.com/how-to-use-whatsapp-for-making-notes-or-use-it-as-a-diary">WhatsApp’s notes</a> but I thought it would be easier to have it all in a single repository. So here I am organizing a year of links that I have been copying into my notes.</p>
+<div id="content" class="section level3">
+<h3>Content:</h3>
+<ol style="list-style-type: decimal">
+<li>Density plots</li>
+</ol>
+<ul>
+<li>Style the legend’s colour bar</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Reordering &amp; facetting</li>
+<li>Cowplot &amp; title styling</li>
+<li>Waffle charts</li>
+<li>Fonts</li>
+</ol>
+</div>
+<div id="density-plots" class="section level1">
+<h1>Density plots</h1>
+<p>I tend to use scatter plots when looking to the relationship between two numeric variables. But visualizations can become overwhelming when the amount of dots is large. Density plots can help to avoid overlapping by dividing the plot in multiple small fragments that represent the number of points in each area. The example below shows a density plot created for showing the relationship of <a href="https://www.un.org/en/development/desa/population/migration/data/estimates2/estimates19.asp">migrant stocks</a> between countries and their <a href="https://dataforgood.fb.com/tools/social-connectedness-index/">Facebook’s Social Contentedness Index</a>.</p>
+<p>In the example below, I used the <code>guides ()</code> function to style the colour bar of the legend. This is a worth checking function!</p>
+<p><strong>Useful URL in the R Graph Gallery: </strong> <a href="https://www.r-graph-gallery.com/2d-density-plot-with-ggplot2.html#hex">2d density plot with ggplot2</a></p>
+<div id="example-of-density-plots" class="section level2">
+<h2>Example of density plots</h2>
+<p><a href="https://github.com/araupontones/SCI_facebook/blob/main/3.R_charts/1.facet_hex_stock_sci.R">See code in Git Hub</a></p>
+<p><img src="https://raw.githubusercontent.com/araupontones/SCI_facebook/main/5.plots/SCI_UN_facet.png" style="width:90.0%" /></p>
+</div>
+</div>
+<div id="reordering-facetting" class="section level1">
+<h1>Reordering &amp; facetting</h1>
+<p>The problem is very simple: how to sort bars within each category in a plot? This sounds simple, but one day I spent hours trying to figure this out. The trick is done by using <code>reorder_within()</code> from the {tidytext} 📦. In the example below, I created a “<em>reordered factor</em>” called Team_rival: <code>reorder_within(Team_rival, goles_barca, decada))</code>.</p>
+<p><strong>Useful URL:</strong> <a href="https://juliasilge.com/blog/reorder-within/">Julia Silge</a></p>
+<div id="example-of-reordering-and-facetting" class="section level2">
+<h2>Example of reordering and facetting</h2>
+<p><a href="https://github.com/araupontones/La-liga">See code in Git Hub</a></p>
+<p><img src="/post/2020-11-13-ggplot-sources_files/figure-html/facet_ordered_chart-1.png" width="672" /></p>
+</div>
+</div>
+<div id="cowplot-title-styling" class="section level1">
+<h1>Cowplot &amp; title styling</h1>
+<p>It may sound silly but one the most important elements of a plot are its labels. Having the ability to control the color, position, and style of the title and subtitle makes a big difference. There are two 📦s that are useful for this: {<em>cowplot</em>} and {ggtext}. In the example below, I combined these 📦s to colour some characters of the title and to position the text in exact place where I wanted it to be.</p>
+<div id="example-of-title-styling-with-cowplot-and-ggtext" class="section level2">
+<h2>Example of title styling with cowplot and ggtext</h2>
+<p><a href="https://github.com/araupontones/gtrends_2020/blob/main/R_charts/1.chart_gtrends_MX.R">See code in Git Hub</a></p>
+<p><img src="https://raw.githubusercontent.com/araupontones/gtrends_2020/main/plots/trends_MX.png" /></p>
+</div>
+</div>
+<div id="waffle-charts" class="section level1">
+<h1>Waffle charts</h1>
+<p>Once in a project, the client asked me to switch tables into more appealing visualizations. I really did not want to use pie charts because they don’t work well with more than 3 categories, and he had already used many bar charts. So, a good alternative was using 🧇 (waffle) charts!</p>
+<p>In this example I’m scrapping the unemployment rates by race reported by the <a href="https://www.bls.gov/web/empsit/cpsee_e16.htm">Bureau of Labor Statistics</a></p>
+<p><strong>Useful URL in Git Hub: </strong> <a href="https://github.com/hrbrmstr/waffle">hrbrmstr/waffle</a></p>
+<p><strong>For scraping tables from websites:</strong> <a href="https://www.storybench.org/scraping-html-tables-and-downloading-files-with-r/">Storybench</a></p>
+<div id="example-of-waffle-chart" class="section level2">
+<h2>Example of waffle chart</h2>
+<p><a href="https://github.com/araupontones/blog/blob/master/R/waffle_charts.R">See code in Git Hub</a></p>
+<p><img src="/post/2020-11-13-ggplot-sources_files/figure-html/waffle_chart-1.png" width="672" /></p>
+</div>
+</div>
 <div id="fonts" class="section level1">
 <h1>Fonts</h1>
-<p>There are 5 steps to load the fonts: 1) <code>install.packages("extrafont")</code>, 2) import fonts from your system into the {extrafont} database <code>font_import()</code>, 3) register those fonts with R <code>loadfonts()</code> (this must be run once in each R session where you want to use the fonts), 4) check that your font is available using <code>fonts()</code>, and 5) use the font family in ggplot <code>theme(text= element_text(family="Roboto"))</code> or in any other specific text of your chart.</p>
+<p>There are 5 steps to load the fonts: 1) 📦 <code>install.packages("extrafont")</code>, 2) import fonts from your system into the {extrafont} database <code>font_import()</code>, 3) register those fonts with R <code>loadfonts()</code> (this must be run once in each R session where you want to use the fonts), 4) check that your font is available using <code>fonts()</code>, and 5) use the font family in ggplot <code>theme(text= element_text(family="Roboto"))</code> or in any other specific text of your chart.</p>
 <p><strong>Useful URL in Stack Overflow:</strong> <a href="https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2">Changing forns in ggplot2</a></p>
 <p><strong>Example:</strong></p>
 <pre><code>library(extrafont)
@@ -35,15 +90,4 @@ font_import(paths = &quot;C:/Users/andre/AppData/Local/Microsoft/Windows/Fonts&q
 # And then load fonts
 loadfonts(device = &quot;win&quot;)
 </code></pre>
-</div>
-<div id="waffle-charts" class="section level1">
-<h1>Waffle charts</h1>
-<p>Once in a project, the client asked me to switch tables into a more appealing visualizations. I really did not want to use pie charts because they don’t work well with more than 3 categories, and he had already used many bar charts. So, a good alternative was using waffle charts!</p>
-<p>In this example I’m scrapping the unemployment rates by race reported by the <a href="https://www.bls.gov/web/empsit/cpsee_e16.htm">Bureau of Labor Statistics</a></p>
-<p><strong>Useful URL in Git Hub: </strong> <a href="https://github.com/hrbrmstr/waffle">hrbrmstr/waffle</a></p>
-<p><strong>For scraping tables from websites</strong> <a href="https://www.storybench.org/scraping-html-tables-and-downloading-files-with-r/">Storybencj</a></p>
-<div id="example-of-waffle-chart" class="section level2">
-<h2>Example of waffle chart:</h2>
-<p><img src="/post/2020-11-13-ggplot-sources_files/figure-html/waffle_chart-1.png" width="672" /></p>
-</div>
 </div>

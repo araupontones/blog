@@ -12,14 +12,13 @@
     
     
     <item>
-      <title>ggplot sources</title>
+      <title>ggplot I</title>
       <link>/post/ggplot-sources/</link>
       <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/ggplot-sources/</guid>
-      <description>For the last two years I have been collecting very useful tricks and ideas to make good looking ggplot charts. Unitl today, this library of useful sources was living in my WhatsApp’s notes but I thought it would be easier to have it all in a single repository. So here I am organizing two years of links that I have been copying into my notes.
-Fonts
-Waffle charts</description>
+      <description>Throughout 2020, while working on visualizations, I collected useful tricks and ideas to make good looking ggplot charts. Unitl today, this library of useful sources was living at my WhatsApp’s notes but I thought it would be easier to have it all in a single repository. So here I am organizing a year of links that I have been copying into my notes.
+Content:Density plotsStyle the legend’s colour barReordering &amp;amp; facettingCowplot &amp;amp; title stylingWaffle chartsFontsDensity plotsI tend to use scatter plots when looking to the relationship between two numeric variables.</description>
     </item>
     
     <item>
