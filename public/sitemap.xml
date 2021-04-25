@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/2020-a-recap/</loc>
-    <lastmod>2020-12-31T00:00:00+00:00</lastmod>
+    <loc>/post/</loc>
+    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/post/web-scraping/</loc>
+    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2020-a-recap/</loc>
     <lastmod>2020-12-31T00:00:00+00:00</lastmod>
   </url>
   

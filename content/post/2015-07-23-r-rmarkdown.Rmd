@@ -46,6 +46,7 @@ I followed [Collin Quirk's approach](http://colinquirk.com/blogdown-on-digitaloc
 1. Open your terminal and navigate to the directory where you will clone your GitHub repo.
 2. `git clone https://github.com/araupontones/blog.git`
 3. Copy the files like this `sudo cp -r public/. /var/www/html/.`
+4. In case you want to interact with files within the server: `chmod -R 777 www/.` [Understanding Linux File Permissions](https://www.linux.com/training-tutorials/understanding-linux-file-permissions/)
 
 *et voila!* your website is up and running!!!
 

@@ -1,5 +1,5 @@
 ---
-title: ggplot I
+title: Data visualization; ggplot I
 author: ''
 date: '2020-11-13'
 slug: ggplot-sources
@@ -102,9 +102,11 @@ In this example I'm scrapping the unemployment rates by race reported by the [Bu
 
 [See code in Git Hub](https://github.com/araupontones/blog/blob/master/R/waffle_charts.R)
 
+![](/post/2020-11-13-ggplot-sources_files/waffle_chart-1.PNG)
+
 ```{R, waffle_chart, echo=F, warning = FALSE, message = FALSE}
-source(file.path(dir_blog, "R/waffle_charts.R"))
-waffle_plot
+#source(file.path(dir_blog, "R/waffle_charts.R"))
+#waffle_plot
 
 #source("R/webscrapping.R")
 ```

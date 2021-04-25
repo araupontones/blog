@@ -1,0 +1,35 @@
+---
+title: Web scraping; example of extracting data from a long, messy & unstructured PDF file
+author: ''
+date: '2021-04-16'
+slug: web-scraping
+categories: []
+tags: []
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>In this post I am presenting an example of how, using <a href="https://en.wikipedia.org/wiki/Web_scraping">web scrapping</a> and data carpentry techniques, I extracted data from a messy and unstructured PDF published by the Spanish Government. See the repository of the code in <a href="https://github.com/araupontones/bienes_ig">GitHub</a>.</p>
+<p>In early 2021, the Government of Spain made public the list of all the properties that the Catholic Church registered between 1998 and 2015. The lists were published in PDF formatted documents of more than 3,000 pages. Apart from being a long PDF, the tables contained in the document were unstructured (almost each table was different from each other). So analyzing this data was a real challenge. Using web scraping techniques in R, I converted the data to a more friendly format and made an <a href="http://andresarau.com/shiny/bienes_iglesia/">interactive search engine</a> that facilitates its access.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Original format of the data</th>
+<th align="center">Interactive search enginge</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="http://ep00.epimg.net/descargables/2021/02/16/81f680e3671ec19edb395114f640972c.pdf"><img src="/post/2021-04-16-web-scraping_files/pdf_iglesia.PNG" style = "padding:20px;"></a></td>
+<td align="center"><a href="http://andresarau.com/shiny/bienes_iglesia/"><img src="/post/2021-04-16-web-scraping_files/dashboard.PNG" style = "padding:20px;"></a></td>
+</tr>
+</tbody>
+</table>
+<p>There are some important lessons learned from this process that are worth taking into consideration for any web scraping job:</p>
+<ol style="list-style-type: decimal">
+<li><p>Take time to inspect the data, try to identity patterns that will help you to convert the data into a tidy format: look for columns containing only capital letters, check if there is a consistency in the sequential order of things, etc.</p></li>
+<li><p>Although an automate process is ideal, try to see if you can chunk your code: Is it possible to do a pre cleaning of the data? Would a semi-manual task can be done before coding?</p></li>
+<li><p>This applies for any workflow: be super organized with your code; never repeat your self, comment <em>WHY</em> you are doing what your are doing.</p></li>
+<li><p>Do not try to solve the puzzle at once. It may be worth to start little by little and then move to the big picture once the mystery has been solved!</p></li>
+</ol>
