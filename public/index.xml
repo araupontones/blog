@@ -2,91 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Andrés Arau</title>
-    <link>/</link>
+    <link>http://andresarau.com/</link>
     <description>Recent content on Andrés Arau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://andresarau.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Qatar 2022; A match predictor</title>
+      <link>http://andresarau.com/post/qatar/</link>
+      <pubDate>Tue, 08 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://andresarau.com/post/qatar/</guid>
+      <description>Every four years, a group of friends organize a World Cup pool (a “Quiniela”). The price of winning it is huge. However, for the last four World Cups my performance has been rather pathetic. The reason: I drew my scores based on emotions (In my last pool, Mexico made it to semis…).
+Recently, I visited a friend Oslo who is an expert in Machine Learning and Deep Generative Models.</description>
+    </item>
+    
+    <item>
       <title>Web scraping; example of extracting data from a long, messy &amp; unstructured PDF file</title>
-      <link>/post/web-scraping/</link>
+      <link>http://andresarau.com/post/web-scraping/</link>
       <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/web-scraping/</guid>
+      <guid>http://andresarau.com/post/web-scraping/</guid>
       <description>In this post I am presenting an example of how, using web scrapping and data carpentry techniques, I extracted data from a messy and unstructured PDF published by the Spanish Government. See the repository of the code in GitHub.
 In early 2021, the Government of Spain made public the list of all the properties that the Catholic Church registered between 1998 and 2015. The lists were published in PDF formatted documents of more than 3,000 pages.</description>
     </item>
     
     <item>
       <title>2020: a recap</title>
-      <link>/post/2020-a-recap/</link>
+      <link>http://andresarau.com/post/2020-a-recap/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-a-recap/</guid>
+      <guid>http://andresarau.com/post/2020-a-recap/</guid>
       <description>Although uncommon, 2020 was still a very intense year in which I kept learning and contributing to enhancing the use of data innovations to inform and improve the implementation of development programmes and initiatives around the globe.
 This post intends to summarize my work in 2020: countries, organizations, and projects I worked for, my experience working remotely, blog posts that I wrote, and the top 3 lessons I learned.</description>
     </item>
     
     <item>
       <title>Data visualization; ggplot I</title>
-      <link>/post/ggplot-sources/</link>
+      <link>http://andresarau.com/post/ggplot-sources/</link>
       <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/ggplot-sources/</guid>
+      <guid>http://andresarau.com/post/ggplot-sources/</guid>
       <description>Throughout 2020, while working on visualizations, I collected useful tricks and ideas to make good looking ggplot charts. Unitl today, this library of useful sources was living at my WhatsApp’s notes but I thought it would be easier to have it all in a single repository. So here I am organizing a year of links that I have been copying into my notes.
 Content:Density plotsStyle the legend’s colour barReordering &amp;amp; facettingCowplot &amp;amp; title stylingWaffle chartsFontsDensity plotsI tend to use scatter plots when looking to the relationship between two numeric variables.</description>
     </item>
     
     <item>
       <title>Keeping my CV up to date with Rmarkdown</title>
-      <link>/post/cv-in-r/</link>
+      <link>http://andresarau.com/post/cv-in-r/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/cv-in-r/</guid>
+      <guid>http://andresarau.com/post/cv-in-r/</guid>
       <description>Keeping my CV up to date became a tedious routine. Not only did I have to repeat the same steps over and over again but I also had to deal with the clunky formatting of Microsoft Word to mantain the style of my resume nice and neat.
 On my daily work I have to come up with efficient ways to automatize data processes: collect, clean, analyze and vizualize data in a way that the cycle can be repeated without the workflow crashing.</description>
     </item>
     
     <item>
       <title>Línea mujeres</title>
-      <link>/post/linea-de-ayuda/</link>
+      <link>http://andresarau.com/post/linea-de-ayuda/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/linea-de-ayuda/</guid>
+      <guid>http://andresarau.com/post/linea-de-ayuda/</guid>
       <description>Las llamadas categorizadas como “violencia de género intrafamiliar” se han triplicado durante la Jornada Nacional de Sana Distancia en Ciudad de México.
 La Jornada Nacional de Sana Distancia que ha estado vigente en México desde el 23 de Marzo de 2020 recomienda a la población quedarse en casa para evitar contagios por coronavirus. Como resultado de la campaña, una buena parte de la sociedad mexicana ha respondido en redes sociales con los ya famosos #QuedateEnCasa o #YoMeQuedoEnCasa.</description>
     </item>
     
     <item>
-      <title>Los invisibles</title>
-      <link>/post/los-invisibles/</link>
-      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/los-invisibles/</guid>
-      <description>Hasta el 21 de abril de 2020 51,634 personas han sido testadas por coronavirus en México. De estas, solamente el 1% habla alguna lengua indígena. Por cada 100,000 personas que residen en municipios de mayoría indígena, a tan solo 4.9 se les ha realizado el test de diagnóstico, frente a casi 45 en municipios de mayoría no indígena.
-El gobierno mexicano proporciona información del seguimiento al coronavirus diariamente. Los datos incluyen información sobre el número de tests realizados, casos confirmados y fallecimientos.</description>
-    </item>
-    
-    <item>
       <title>Tracker of confirmed cases for covid19 in Mexico</title>
-      <link>/post/covid19mx-tracker/</link>
+      <link>http://andresarau.com/post/covid19mx-tracker/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/covid19mx-tracker/</guid>
+      <guid>http://andresarau.com/post/covid19mx-tracker/</guid>
       <description>This interactive map is a personal and voluntary project that aims to track confirmed cases of #covid19 in each Mexican municipality. The map automatically updates in real-time using official data from the Mexican government.
 Feel free to enter the map, click on a municipality to see how many of its residents have tested positive for covid19, or look at the charts that show the daily evolution of covid19 in Mexico</description>
     </item>
     
     <item>
       <title>Set up a website with R using blogdown, GitHub, and DigitalOcean</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <link>http://andresarau.com/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>http://andresarau.com/post/2015-07-23-r-rmarkdown/</guid>
       <description>I am writting this because it took me some long nights and days to try to figure out how to get started with blogdown. Hopefuly this post helps someone just like these sources have helped me:
 Yihui Xie’s fantastic blogdown book,Alison Hill’s amazing step by step,and, Collin Quirk’s super ueful guide to upload blogdown into DigitalOcean
 In GitHUBCreate a repositary, name it as you want and enable a READMEClick on the green buton “Clone or download”In your terminalOpen git bash, select the local directory where you want to clone the GitHub repogit clone https://github.</description>
@@ -94,10 +94,10 @@ In GitHUBCreate a repositary, name it as you want and enable a READMEClick on 
     
     <item>
       <title>About me</title>
-      <link>/about/</link>
+      <link>http://andresarau.com/about/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>http://andresarau.com/about/</guid>
       <description>MeI am passionate about data visualization, interactive maps, and the use of data innovative approaches to facilate ongoing learning and adaptation of development programmes.
 I have lived in:Mexico, Canada, Spain, US, Sweden, and UK.
 My professional experience expands over more than 26 projects across 21 countries worldwide:Austria, Brazil, China, Colombia, Ecuador, Ghana, India, Kenya, Madagascar, Malawi, Mexico, Mozambique, Nigeria, Peru, Sierra Leone, South Africa, Uganda, United Kingdom, United States, Venezuela, and Vietnam.</description>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cronjob on Andrés Arau</title>
+    <link>http://andresarau.com/categories/cronjob/</link>
+    <description>Recent content in cronjob on Andrés Arau</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Nov 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://andresarau.com/categories/cronjob/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qatar 2022; A match predictor</title>
+      <link>http://andresarau.com/post/qatar/</link>
+      <pubDate>Tue, 08 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://andresarau.com/post/qatar/</guid>
+      <description>Every four years, a group of friends organize a World Cup pool (a “Quiniela”). The price of winning it is huge. However, for the last four World Cups my performance has been rather pathetic. The reason: I drew my scores based on emotions (In my last pool, Mexico made it to semis…).
+Recently, I visited a friend Oslo who is an expert in Machine Learning and Deep Generative Models.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,8 +1,19 @@
 ---
-title: 'Qatar 2022 - Match Predictor'
+title: Qatar 2022; A match predictor
 author: ''
 date: '2022-11-08'
-slug: []
+slug: qatar
+categories:
+  - cronjob
+  - webscrap
+tags: []
+---
+
+---
+title: 'Qatar 2022: match predictor'
+author: ''
+date: '2022-11-07'
+slug: qatar
 categories: []
 tags: []
 ---
@@ -54,4 +65,5 @@ It is important to **clone the repo in your virtual machine using "SSH"**. By do
 
 * Basically, on your terminal, open the crontab editor `crontab -e`
 * And define the command to be run: `* * * * * /your_directory/your_command`
+
 

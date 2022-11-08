@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Andrés Arau</title>
-    <link>/categories/r/</link>
+    <link>http://andresarau.com/categories/r/</link>
     <description>Recent content in R on Andrés Arau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://andresarau.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Set up a website with R using blogdown, GitHub, and DigitalOcean</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <link>http://andresarau.com/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>http://andresarau.com/post/2015-07-23-r-rmarkdown/</guid>
       <description>I am writting this because it took me some long nights and days to try to figure out how to get started with blogdown. Hopefuly this post helps someone just like these sources have helped me:
 Yihui Xie’s fantastic blogdown book,Alison Hill’s amazing step by step,and, Collin Quirk’s super ueful guide to upload blogdown into DigitalOcean
 In GitHUBCreate a repositary, name it as you want and enable a READMEClick on the green buton “Clone or download”In your terminalOpen git bash, select the local directory where you want to clone the GitHub repogit clone https://github.</description>

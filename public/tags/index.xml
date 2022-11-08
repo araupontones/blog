@@ -2,93 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Andrés Arau</title>
-    <link>/tags/</link>
+    <link>http://andresarau.com/tags/</link>
     <description>Recent content in Tags on Andrés Arau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://andresarau.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>http://andresarau.com/tags/r/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>http://andresarau.com/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
+      <link>http://andresarau.com/tags/r-markdown/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r-markdown/</guid>
+      <guid>http://andresarau.com/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>covid</title>
-      <link>/tags/covid/</link>
-      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      <link>http://andresarau.com/tags/covid/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/covid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>indigenas</title>
-      <link>/tags/indigenas/</link>
-      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/indigenas/</guid>
+      <guid>http://andresarau.com/tags/covid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dashboards</title>
-      <link>/tags/dashboards/</link>
+      <link>http://andresarau.com/tags/dashboards/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dashboards/</guid>
+      <guid>http://andresarau.com/tags/dashboards/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shiny</title>
-      <link>/tags/shiny/</link>
+      <link>http://andresarau.com/tags/shiny/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/shiny/</guid>
+      <guid>http://andresarau.com/tags/shiny/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blogdown</title>
-      <link>/tags/blogdown/</link>
+      <link>http://andresarau.com/tags/blogdown/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/blogdown/</guid>
+      <guid>http://andresarau.com/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DigitalOCean</title>
-      <link>/tags/digitalocean/</link>
+      <link>http://andresarau.com/tags/digitalocean/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/digitalocean/</guid>
+      <guid>http://andresarau.com/tags/digitalocean/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GitHub</title>
-      <link>/tags/github/</link>
+      <link>http://andresarau.com/tags/github/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/github/</guid>
+      <guid>http://andresarau.com/tags/github/</guid>
       <description></description>
     </item>
     
