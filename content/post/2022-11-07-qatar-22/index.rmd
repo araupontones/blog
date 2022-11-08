@@ -1,8 +1,8 @@
 ---
 title: 'Qatar 2022: match predictor'
 author: ''
-date: '2022-11-08'
-slug: qatar-22
+date: '2022-11-07'
+slug: qatar
 categories: []
 tags: []
 ---
