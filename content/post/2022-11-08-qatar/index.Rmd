@@ -27,38 +27,41 @@ See all the code in [GitHub](https://github.com/araupontones/CariQuiniela).
 # This is what we did
 
 1. We first web-scrapped, from [fbref](https://fbref.com/en/), all the matches that the 32 qualified teams have played since 2011 until just before the WC. 
-2. To have a proxy for each team's performance index, we scrapped (via [FIFA Rankings](https://www.fifa.com/fifa-world-ranking/men?dateId=id13792) the tranking of each team for each quarter since 2015.
+2. To have a proxy for each team's performance index, we scrapped (via [FIFA Rankings](https://www.fifa.com/fifa-world-ranking/men?dateId=id13792) the ranking of each team for each quarter since 2015.
 3. We assumed that, among other things, the number of goals that each team is expected to score during a match, is a function of the number of goals that they have scored in the past, the number of matches that they have failed to score, and the skills of the team that they are playing against. Thus, we created a summary table with these indicators for each team and all years since 2011.
 4. During the World Cup, we defined a scheduled job (a cron-job) to update our indicators on daily basis. Thus, our data was always up-to-date.
 5. Then, my friend did his predictive magic.
 
 ![](https://media.tenor.com/t4HIrZDwx8AAAAAS/doc-brown-it-works.gif)
 
-2. To have a proxy for each team's performance index, we requested (via [odds-API](https://the-odds-api.com/)) the odds of each team to win the WC. Because the odds are dynamic, we created a scheduled job in our virtual machine to update the odds on daily basis. 
+
 
 # What was the result?
 
-During the first few games, our performance was very low (we hit only 33% of the win/lose/draw and have guessed only 1 score. We assumed that the reason was that the FIFA rankings that we were using 1) very static in time and 2) were not very accurate to reflect differences between teams. Thus, we substitute FIFA rankings for ELO ratings to have a better indicator for the team's performance. 
+During the first few games, our performance was very low (we hit only 33% of the win/lose/draw and have predicted accurately only one single score. We assumed that the main reason for this failure was that the FIFA rankings that we were using were *1) very static in time and 2) were not very accurate to reflect differences between teams*. Thus, we substituted FIFA rankings for ELO ratings to have a better indicator for the team's performance. 
 
-Performance of the first 12 matches
+**This was our performance during the first 12 matches:**
+
+*The size of each circle shows the probability of our predicted score to be correct*
 
 ![](images/performance_walle_1.svg)
 
-To have updated data on daily basis, we built a cronjob that ran every day at 1 o'clock in our virtual machine. After every match,this cron-job would re-estimate each team's ELO rating and would create the expectancy of a team wining over its opponent based on their ELO ratings differences. We called this variable *magic_johnson*.  This was based on the [eloratings.net](https://www.eloratings.net/about)
+To have updated data, we built a cronjob in our virtual machine that ran daily at 1 o'clock. After every match, this cronjob would re-estimate each team's ELO rating and would create the expectancy of a team wining over its opponent based on their ELO ratings differences. We called this variable *magic_johnson*.  This was based on the [eloratings.net](https://www.eloratings.net/about)
 
 
 The new approach increased our perfromance from 33% to 50%, which was what our model predicted while we tested. 
 
+**Performance after including expectancy to win based on ELO ratings:**
+
 ![](images/performance_walle_2.svg)
 
+# What we learnt or confirmed
 
-#What we learnt or confirmed
+* Predicting the result of a football match is nearly impossible, there are too many factors that make the game to behave almost randomly. Think about it: 22 players making decisions every second of a match that lasts 90 minutes....
 
-* Predicting the result of a football match is nearly impossible, there are too many factors that make the game to behave almost randomly. Think about it: 22 players making decisions every second of a match that last 90 minutes....
+* For many games, our predictor was very accurate about which team would have more chances to win. However, a serendipitous situation would change the course of things in a second. For example, we predicted that Brasil would beat Croatia 1-0. However, Petkovic's goal in the last minute, made it 1-1, which is a missed score for our system. We had plenty of these situations during the World Cup.
 
-* For many games, our predictor was very accurate about which team would have more chances to win. However, a serendipitous situation would change the course of things in a second. For example, we predicted that Brasil would bit Croatia 1-0. However, Petkovic's goal in the last minute, made it 1-1, which is a missed score for our system. We had plenty of this situation during the World Cup
-
-* Although we improved our model during the World Cup, we still believe that there is scope for improvement. Our model's most significant variable is the expectancy of a team winning over other team based on their ELO rating differences. However, this variable is what it is called *point-in-time* which shows the differences between the two games right before the match but not how the team's performance has developed over time. Thus, our next attempt will try to include this effect. If we do that rightly, our next model would give a higher change of Morrocco beating Portugal, for example. 
+* Although we improved our model during the World Cup, we still believe that there is scope for further improvement. Our model's most significant variable is the expectancy of a team winning over other team based on their ELO rating differences. However, this variable is what it is called *point-in-time* which shows the differences between the two games right before the match but not how the team's performance has developed during the competition. Thus, our next attempt will try to include this effect. If we do that rightly, our next model would give a higher change of Morrocco beating Portugal, for example. 
 
 
 

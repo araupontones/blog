@@ -12,14 +12,14 @@ tags: []
 <script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
 
 
-<p>Every four years, a group of friends organize a World Cup pool (a <a href="https://cariquiniela.com/inicio">“Quiniela”</a>). The price of winning it is huge. However, for the last four World Cups my performance has been rather pathetic. The reason: I drew my scores based on emotions (In my last pool, Mexico made it to semis…).</p>
-<p>Recently, I visited a friend Oslo who is an expert in Machine Learning and Deep Generative Models. He’s also a big fan of football. Over a couple of beers, quite a few, we decided to unite my data carpentry skills with his statistical knowledge to try to predict Qatar’s WC matches. And if possible, become, for the first time, the winners of the “Cari Quiniela”.</p>
+<p>Every four years, a group of friends organize a World Cup pool (a <a href="https://cariquiniela.com/inicio">“Quiniela”</a>). The price of winning it is huge. However, for the last four World Cups my performance has been rather pathetic. The reason: I drew my scores based on emotions (In my last <em>quiniela</em>, Mexico made it to semis…).</p>
+<p>Recently, I visited a friend in Oslo who is an expert in Machine Learning and Deep Generative Models. He’s also a big fan of football. Over a couple of beers, quite a few, we decided to unite my data carpentry skills with his statistical knowledge to try to predict Qatar’s WC matches. And if possible, become, for the first time, the winners of the “Cari Quiniela”.</p>
 <p>See all the code in <a href="https://github.com/araupontones/CariQuiniela">GitHub</a>.</p>
 <div id="this-is-what-we-did" class="section level1">
 <h1>This is what we did</h1>
 <ol style="list-style-type: decimal">
 <li>We first web-scrapped, from <a href="https://fbref.com/en/">fbref</a>, all the matches that the 32 qualified teams have played since 2011 until just before the WC.</li>
-<li>To have a proxy for each team’s performance index, we requested (via <a href="https://the-odds-api.com/">odds-API</a>) the odds of each team to win the WC. Because the odds are dynamic, we created a scheduled job in our virtual machine to update the odds on daily basis.</li>
+<li>To have a proxy for each team’s performance index, we scrapped (via <a href="https://www.fifa.com/fifa-world-ranking/men?dateId=id13792">FIFA Rankings</a> the ranking of each team for each quarter since 2015.</li>
 <li>We assumed that, among other things, the number of goals that each team is expected to score during a match, is a function of the number of goals that they have scored in the past, the number of matches that they have failed to score, and the skills of the team that they are playing against. Thus, we created a summary table with these indicators for each team and all years since 2011.</li>
 <li>During the World Cup, we defined a scheduled job (a cron-job) to update our indicators on daily basis. Thus, our data was always up-to-date.</li>
 <li>Then, my friend did his predictive magic.</li>
@@ -28,7 +28,22 @@ tags: []
 </div>
 <div id="what-was-the-result" class="section level1">
 <h1>What was the result?</h1>
-<p>… wait until the WC ends</p>
+<p>During the first few games, our performance was very low (we hit only 33% of the win/lose/draw and have predicted accurately only one single score. We assumed that the main reason for this failure was that the FIFA rankings that we were using were <em>1) very static in time and 2) were not very accurate to reflect differences between teams</em>. Thus, we substituted FIFA rankings for ELO ratings to have a better indicator for the team’s performance.</p>
+<p><strong>This was our performance during the first 12 matches:</strong></p>
+<p><em>The size of each circle shows the probability of our predicted score to be correct</em></p>
+<p><img src="images/performance_walle_1.svg" /></p>
+<p>To have updated data, we built a cronjob in our virtual machine that ran daily at 1 o’clock. After every match, this cronjob would re-estimate each team’s ELO rating and would create the expectancy of a team wining over its opponent based on their ELO ratings differences. We called this variable <em>magic_johnson</em>. This was based on the <a href="https://www.eloratings.net/about">eloratings.net</a></p>
+<p>The new approach increased our perfromance from 33% to 50%, which was what our model predicted while we tested.</p>
+<p><strong>Performance after including expectancy to win based on ELO ratings:</strong></p>
+<p><img src="images/performance_walle_2.svg" /></p>
+</div>
+<div id="what-we-learnt-or-confirmed" class="section level1">
+<h1>What we learnt or confirmed</h1>
+<ul>
+<li><p>Predicting the result of a football match is nearly impossible, there are too many factors that make the game to behave almost randomly. Think about it: 22 players making decisions every second of a match that lasts 90 minutes….</p></li>
+<li><p>For many games, our predictor was very accurate about which team would have more chances to win. However, a serendipitous situation would change the course of things in a second. For example, we predicted that Brasil would beat Croatia 1-0. However, Petkovic’s goal in the last minute, made it 1-1, which is a missed score for our system. We had plenty of these situations during the World Cup.</p></li>
+<li><p>Although we improved our model during the World Cup, we still believe that there is scope for further improvement. Our model’s most significant variable is the expectancy of a team winning over other team based on their ELO rating differences. However, this variable is what it is called <em>point-in-time</em> which shows the differences between the two games right before the match but not how the team’s performance has developed during the competition. Thus, our next attempt will try to include this effect. If we do that rightly, our next model would give a higher change of Morrocco beating Portugal, for example.</p></li>
+</ul>
 </div>
 <div id="some-code-tips-to-replicate-a-similar-job" class="section level1">
 <h1>Some code tips to replicate a similar job</h1>
