@@ -34,21 +34,20 @@ See all the code in [GitHub](https://github.com/araupontones/CariQuiniela).
 
 ![](https://media.tenor.com/t4HIrZDwx8AAAAAS/doc-brown-it-works.gif)
 
+2. To have a proxy for each team's performance index, we requested (via [odds-API](https://the-odds-api.com/)) the odds of each team to win the WC. Because the odds are dynamic, we created a scheduled job in our virtual machine to update the odds on daily basis. 
 
 # What was the result?
 
-During the first few games, our performance was very low (we hit only 33% of the win/lose/draw and predicted correctly only 1 score. We assumed that the reason was that the FIFA rankings that we were using were 1) very static in time and 2) were not very accurate to reflect differences between teams. Thus, we substituted FIFA rankings for ELO ratings to have a better indicator for the team's performance. 
+During the first few games, our performance was very low (we hit only 33% of the win/lose/draw and have guessed only 1 score. We assumed that the reason was that the FIFA rankings that we were using 1) very static in time and 2) were not very accurate to reflect differences between teams. Thus, we substitute FIFA rankings for ELO ratings to have a better indicator for the team's performance. 
 
-**This was our performance of the first 12 matches:**
+Performance of the first 12 matches
 
 ![](images/performance_walle_1.svg)
 
-To have updated data on daily basis, we built a cronjob in our virual machine that ran every day at 1 o'clock. After every match,this cronjob would re-estimate each team's ELO rating and would create the expectancy of a team wining over its opponent based on their ELO ratings differences. We called this variable *magic_johnson*.  This was based on the [eloratings.net](https://www.eloratings.net/about)
+To have updated data on daily basis, we built a cronjob that ran every day at 1 o'clock in our virtual machine. After every match,this cron-job would re-estimate each team's ELO rating and would create the expectancy of a team wining over its opponent based on their ELO ratings differences. We called this variable *magic_johnson*.  This was based on the [eloratings.net](https://www.eloratings.net/about)
 
 
-The new approach increased our performance from 33% to 50%, which was what our model predicted while we tested. 
-
-**Performace of the model after subsituting FIFA for ELO ratings:**
+The new approach increased our perfromance from 33% to 50%, which was what our model predicted while we tested. 
 
 ![](images/performance_walle_2.svg)
 
